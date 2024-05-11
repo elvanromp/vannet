@@ -1,0 +1,506 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif !important;
+
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(233, 233, 233);
+}
+
+header {
+  background-color: white;
+}
+
+header.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  padding-block: 1rem;
+  margin-inline: auto;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 4;
+  position: fixed;
+  border-bottom: 2px solid rgb(174, 173, 173);
+}
+
+header.navbar-container .logo img {
+  width: 100px;
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  display: flex;
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: orange;
+  color: white;
+}
+
+header.navbar-container .search-box{
+  display: flex;
+  align-items: center;
+  border: 2px solid rgb(255, 205, 112);
+  border-radius: 10px;
+  padding: 2px 16px;
+  width: 250px;
+}
+
+header.navbar-container .search-box .search-icon {
+  font-size: 1rem;
+  color: grey;
+}
+
+header.navbar-container .search-box .search-input {
+  transition: .5s;
+}
+
+header.navbar-container .search-box .search-input input {
+  outline: none;
+  border: none;
+  background-color: unset;
+  padding: 8px;
+  width: 210px;
+  font-size: 0.95rem;
+}
+
+::placeholder {
+  font-size: 0.95rem;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  background-color: white;
+}
+
+main .content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-block-end: 3rem;
+  margin-top: 5rem;
+}
+main .content .content-description {
+  flex: 1 1;
+}
+main .content .content-description .title {
+  margin-block: 1rem;
+  font-size: 3.5rem;
+}
+
+main .content .content-description p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+main .content .content-description button {
+  padding: 0.8rem 2.5rem;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  margin-block-start: 1rem;
+  background-color: orange;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+main .content .content-description button:hover {
+  border: 3px solid orange;
+  background-color: transparent;
+  color: orange;
+}
+main .content .content-image {
+  flex: 1;
+  display: flex;
+}
+main .content .content-image img {
+  width: 300px;
+  min-width: 250px;
+  margin: auto;
+}
+
+main .banner .banner-description {
+  text-align: center;
+  border-top: 2px solid;
+  margin-top: 3rem;
+  border-color: rgb(176, 176, 176);
+}
+
+main .banner .banner-description p {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+main .offer .content-offer {
+  display: flex;
+  justify-content: center;
+  /* gap: 3rem; */
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+main .offer .content-offer .speed-wrapper {
+  width: 25%;
+  display: flex;
+
+  justify-content: center;
+}
+
+main .offer .content-offer #speed {
+  width: 90%;
+  min-height: 45vh;
+  display: flex;
+  font-size: 1rem;
+  flex-direction: column;
+  padding: 8px;
+}
+
+main .offer .content-offer .card {
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+}
+
+main .offer .content-offer .offer-title {
+  text-align: center;
+}
+
+main .offer .content-offer #speed ul {
+  text-align: left;
+  margin-block: 0rem 1rem;
+}
+
+main .offer .content-offer #speed #price {
+  text-align: right;
+  margin-top: auto;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+main .offer .content-offer #speed #price sub {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+main .offer .content-offer #speed button {
+  padding: 0.6rem 1.8rem;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  margin-block-start: 1rem;
+  background-color: orange;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+  margin-top: 0rem;
+}
+
+main .offer .content-offer #speed button:hover {
+  border: 3px solid orange;
+  background-color: transparent;
+  color: orange;
+}
+
+main aside.contact-wrapper {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  border-top: 2px solid rgb(175, 175, 175);
+  margin-top: 2rem;
+}
+
+main aside .contact {
+  margin-top: 2rem;
+  padding: 2rem;
+  max-width: fit-content;
+  background-color: rgb(255, 184, 52);
+  border-radius: 20px;
+}
+
+main aside .contact table {
+  text-align: left;
+}
+
+main aside .contact table td {
+  padding-bottom: 0.5rem;
+}
+
+
+
+main aside img {
+  width: 150px;
+  border-radius: 999px;
+}
+
+main aside table th {
+  text-align: left;
+}
+
+main #chat-wrapper {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+
+main #chat {
+  height: 100%;
+  display: flex;
+}
+
+main #popup {
+  height: 55vh;
+  width: 350px;
+  display: none;
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+  top: 20vh;
+  margin-right: 1.5rem;
+  z-index: 5;
+}
+
+main #popup #popup-close-wrapper {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+
+main #popup #popup-close-wrapper :hover {
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+main #popup #popup-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  border-radius: 999px;
+  cursor: pointer;
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+
+main #popup #popup-close i {
+  font-size: 10px;
+}
+
+main #popup #popup-close i :hover {
+  box-shadow: none;
+}
+
+main #logo-banner-wrapper {
+  background-color: orange;
+  border-radius: 20px;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+main #logo-banner {
+  display: flex;
+}
+
+main #logo-banner img {
+  width: 100px;
+}
+
+main #logo-banner p {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  width: 100%;
+  color: white;
+  align-self: center;
+}
+
+main .chat-input-wrapper {
+  height: 52vh;
+  background-color: white;
+  border-radius: 20px;
+}
+
+main #chat-input {
+  height: 45vh;
+  background-color: white;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main #chat-input input, textarea {
+  width: 320px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(234, 234, 234);
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 16px;
+  outline: none;
+}
+
+main #chat-input textarea {
+  height: 100px;
+  font-family: 'Quicksand';
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  resize: none;
+}
+
+main #popup .chat-send-wrapper {
+  display: flex;
+  justify-content: end;
+  margin-right: 10px;
+}
+
+main #popup .chat-send button {
+  outline: none;
+  border: none;
+  background-color: white;
+  color: orange;
+  justify-content: end;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main #chat ul {
+  padding: 1rem 1.2rem;
+  border-radius: 25px 25px 25px 10px;
+  background-color: orange;
+  margin-top: auto;
+  margin-right: 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+
+main #chat li {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+footer {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  background-color: white;
+}
+
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid;
+  border-color: rgb(163, 163, 163);
+  font-size: 0.8rem;
+  padding-top: 0.8rem;
+}
+
+@media screen and (max-width: 1068px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem 3rem;
+  }
+
+  main .content {
+    margin-top: 15rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  main .content .content-description .title {
+    font-size: 3rem;
+  }
+  main .content .content-description p {
+    font-size: 1rem;
+  }
+  main .content .content-image {
+    order: -1;
+  }
+  main .offer .content-offer .speed-wrapper {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 528px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem 3rem;
+  }
+
+  main .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  main .content .content-description .title {
+    font-size: 3rem;
+  }
+  main .content .content-description p {
+    font-size: 1rem;
+  }
+  main .content .content-image {
+    order: -1;
+  }
+  main .offer .content-offer .speed-wrapper {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
